@@ -40,6 +40,16 @@ Lua version
 
 **Note:** Here assumes Torch7 is installed in $HOME/torch/install.
 
+## Preliminary result
+
+Here is some very **unofficial** result on running time comparison of the three implementations on a Macbook Pro labtop computer and the TACC stampede node. 
+The speed depends on the implementation of the MPI and numerial library.
+
+| Language      | C/GSL         | Lua/Torch  | Python/Numpy  |
+| ------------- |:-------------:|:----------:|:-------------:|
+| Macbook       | 0.0264 sec    | 0.0553 sec | 0.669 sec     |
+| Stampede      | 0.009936 s    | 0.009416 s | 0.064316      |
+
 
 ## Acknowledgement
 
