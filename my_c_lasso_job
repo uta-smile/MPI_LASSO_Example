@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH -J c_lasso           # job name
+#SBATCH -o c_lasso.o%j       # output and error file name (%j expands to jobID)
+#SBATCH -N 1                # Total number of nodes requested (16 cores/node)
+#SBATCH -n 4               # total number of mpi tasks requested
+#SBATCH -p normal     # queue (partition) -- normal, development, etc.
+#SBATCH -t 00:00:10        # run time (hh:mm:ss) - 1.5 hours
+#SBATCH --mail-user=yeqing.li@mavs.uta.edu
+#SBATCH --mail-type=begin  # email me when the job starts
+#SBATCH --mail-type=end    # email me when the job finishes
+ibrun ./lasso              # run the MPI executable named a.out
+
+
