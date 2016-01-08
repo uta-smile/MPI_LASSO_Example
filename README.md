@@ -14,6 +14,17 @@ This repository provide implementations in three languages:
 
 ### Run on local machine
 
+First of all, one should load the require modules on TACC before running the code.
+Using the follow script to load modules
+
+```bash
+. ./loadmod.sh
+```
+
+**Note:** the dot before "./loadmod.sh" is critical and cannot be eliminated.
+
+Then, one can choose the following implementation to run.
+
 C version
 > make
 
